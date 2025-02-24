@@ -67,5 +67,49 @@ public class Main {
 
         num %= 3;   // num = num % 3;
         System.out.println("num = " + num);
+
+
+        // 증감 연산자
+        num = 1;
+        num++;  // 2
+        num++;  // 3
+        num--;  // 2
+        num--;  // 1
+        System.out.println("num = " + num);
+
+        // 전위 연산 (++i) : 연산 후 값이 활용됨
+        int intBox = 5;
+        System.out.println("(++intBox) = " + (++intBox));  // 6
+
+        // 후위 연산 : 값을 활용한 후 연산함
+        int intBox2 = 5;
+        System.out.println("(intBox2++) = " + (intBox2++)); // 5 // 5라고 출력한 다음에 intBox2의 값이 6이 됨
+        System.out.println("intBox2 = " + intBox2); // 6
+
+        // 비교 연산자
+        // 같음연산자(=) : 같으면 true, 다르면 false
+        System.out.println("10 == 10 : " + (10 == 10));  // true
+
+        // 다름 연산자(!=) : 다르면 true, 같으면 false
+        System.out.println("10 != 5 : " + (10 != 5)); // true
+
+        // 크기비교연산자
+        System.out.println("10 < 5 : " + (10 < 5));  // false
+        System.out.println("10 >= 10 : " + (10 >= 10));  // true
+        System.out.println("10 <= 5 : " + (10 <= 5));  // false
+
+        // 논리 연산자
+        // AND 연산(&&) : 두 조건이 모두 참일떄, true를 반환
+        System.out.println("true && true : " + (true && true)); // true
+
+        int age = 20;
+        boolean isStudent = true;
+        System.out.println((age>18) && isStudent);  // true
+
+        // OR 연산자(||) : 두 조건 중 하나라도 참이라면 true를 반환
+        System.out.println("false || true : " + (false || true)); // true
+
+        // NOT 연산자(!) : true를 false로, false를 true로 바꾸어 줌
+        System.out.println("!true : " + (!true));
     }
 }
