@@ -50,5 +50,10 @@ public class Main {
         int smallBox2 = 10;
         double bigBox2 = smallBox2;
         System.out.println("bigBox2 = " + bigBox2);
+
+        // 문자열 데이터
+        // 큰따옴표와 작은따옴표 구분하기
+        char a1 = 'a';
+        String str = "안녕하세요!";
     }
 }
