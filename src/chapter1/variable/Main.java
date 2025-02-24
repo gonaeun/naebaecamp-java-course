@@ -37,18 +37,18 @@ public class Main {
         // float는 소수점 6~7자리. double은 소수점 15~17자리까지 담아냄
         System.out.println("floatBox = " + floatBox);
 
-        double doubleBox = 0.1234567890;
+        double doubleBox = 0.1234567890;  // 0.123456789
         System.out.println("doubleBox = " + doubleBox);
 
         // 캐스팅(Casting)
         // 다운캐스팅 : 큰 데이터를 작은 상자에 (명시적 변환)
         double bigBox = 10.123;
-        int smallBox = (int) bigBox;
+        int smallBox = (int) bigBox;  // 10
         System.out.println("smallBox = " + smallBox);
 
         // 업캐스팅 : 작은 데이터를 큰 상자에
         int smallBox2 = 10;
-        double bigBox2 = smallBox2;
+        double bigBox2 = smallBox2;  // 10.0
         System.out.println("bigBox2 = " + bigBox2);
 
         // 문자열 데이터
