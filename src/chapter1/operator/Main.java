@@ -111,5 +111,30 @@ public class Main {
 
         // NOT 연산자(!) : true를 false로, false를 true로 바꾸어 줌
         System.out.println("!true : " + (!true));
+
+        // 기본 연산자 우선순위 : 산술 > 비교 > 논리 > 대입
+        boolean flag = 10 + 5 > 12 && true;
+        // 실행순서
+        // 산술 10 + 5
+        // 비교 15 > 12
+        // 논리 true && true
+        // 대입 flag = true
+        // 괄호를 적극적으로 활용하자
+
+        // 논리 연산자 우선순위 (! > && > ||)
+        boolean result = true || false && false;
+        System.out.println("result = " + result);
+
+        boolean result2 = true || false && (!false);
+        System.out.println("result2 = " + result2);
+
+        // 문자열 비교
+        String text = "hello";
+        String text2 = "Hello";
+        // 나쁜 예 : (text == text2)
+        // ==는 메모리 주소를 비교하는 방식이므로 문자열 비교할 때 사용x
+        boolean isEqual = text.equals(text2);
+        System.out.println("isEqual = " + isEqual);
+
     }
 }
