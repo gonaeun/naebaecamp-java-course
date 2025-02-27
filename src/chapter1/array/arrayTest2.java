@@ -6,7 +6,6 @@ public class arrayTest2 {
         int[] a = {2, 5, 8};
         int sum = 0;
 
-        System.out.println("누적합 : ");
         for (int i = 0; i<a.length; i++) {
             sum += a[i];
         }
