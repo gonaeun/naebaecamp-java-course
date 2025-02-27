@@ -1,4 +1,4 @@
-package chapter1;
+package chapter1.conditions;
 
 import java.util.Scanner;
 
