@@ -29,5 +29,9 @@ public class Main {
         // 예) toString() : 정수형 데이터를 문자형 데이터로 바로 변경해주는 기능
         String numStr = num.toString();
         System.out.println("numStr = " + numStr);
+
+        // 직접 만든 래퍼클래스
+        Custominteger myInteger = new Custominteger(10);
+        String myStrInteger = myInteger.toString();
     }
-}
+};
