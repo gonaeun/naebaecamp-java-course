@@ -33,5 +33,16 @@ public class Main {
         // 직접 만든 래퍼클래스
         Custominteger myInteger = new Custominteger(10);
         String myStrInteger = myInteger.toString();
+
+
+        // 오토박싱 : 기본형->래퍼형
+        Integer num3 = 10;
+        // ctrl 누르고 Integer 위에 커서 올리면 기능 확인할 수 있음
+        // Integer num3 = Integer.valueOf(10); 생성자를 불러오는 기능이 내부적으로 자동처리되어있음을 확인.
+
+        // 오토언박싱 : 래퍼형->기본형
+        int num4 = num3;
+        // 참조형을 기본형에 대입
+        // int a = num.intValue(); 내부적으로 자동처리됨
     }
 };
