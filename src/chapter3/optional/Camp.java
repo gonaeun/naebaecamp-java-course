@@ -1,5 +1,7 @@
 package chapter3.optional;
 
+import java.util.Optional;
+
 public class Camp {
     // 속성
     private Student student;
@@ -7,8 +9,12 @@ public class Camp {
     // 생성자
 
     // 기능
-    public Student getStudent() {
-        return student;
+//    public Student getStudent() {
+//        return student;
+//    }
+
+    public Optional<Student> getStudent() {
+        return Optional.ofNullable(student);
     }
 
     public void setStudent(Student student) {
