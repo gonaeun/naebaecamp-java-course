@@ -56,8 +56,11 @@ public class Main {
     }
 
     public static void login (String userid, String password) throws Exception {
-        if (!userid.equals("admin") || !password.equals("1234")) {
-            throw new Exception("로그인 실패! 아이디 또는 비밀번호가 잘못되었습니다.");
+        if (!userid.equals("admin")) {
+            throw new Exception("로그인 실패! 아이디가 잘못되었습니다.");
+        }
+        if (!password.equals("1234")) {
+            throw new Exception("로그인 실패! 비밀번호가 잘못되었습니다.");
         }
     }
 }
