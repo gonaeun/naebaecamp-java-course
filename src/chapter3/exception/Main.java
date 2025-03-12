@@ -19,11 +19,19 @@ public class Main {
         // 3. 언체크 예외 호출
         ExceptionPractice exceptionPractice = new ExceptionPractice();
         // main에서 예외처리하는 경우
+//        try {
+//            exceptionPractice.callUncheckedException();
+//        } catch (RuntimeException e) {
+//            System.out.println("언체크 예외 처리");
+//        }
+
+        // 4. 체크 예외 호출
         try {
-            exceptionPractice.callUncheckedException();
-        } catch (RuntimeException e) {
-            System.out.println("언체크 예외 처리");
+            exceptionPractice.callCheckedException();
+        } catch (Exception e) {
+            System.out.println("체크 예외 처리");
         }
+
 
         System.out.println("프로그램 종료"); // 이전코드에서 예외처리되야 실행될 수 있음
     }
