@@ -49,6 +49,17 @@ public class Main {
                             .map(num -> num * 10)    // 2. 중간 연산 등록
                             .collect(Collectors.toList());  // 3. 최종 연산 단계
         System.out.println("ret5 = " + ret5);
+
+        // 4. 중간연산을 함께 사용하는 방법(filter() + map())
+        // 요구사항 : 리스트에서 짝수를 찾아서 *10
+        // 1) 짝수찾기
+        // 2) *10
+        List<Integer> ret6 = arrayList.stream()          // 1. 데이터 흐름 준비(1,2,3,4,5)
+                .filter(num -> num % 2 == 0)      // 2. 중간 연산 등록 (짝수 찾기)
+                .map(num -> num * 10)             // 3. 중간 연산 등록 (*10)
+                .collect(Collectors.toList());           // 4. 최종 연산 단계
+        System.out.println("ret6 = " + ret6);
+
     }
 
 }
