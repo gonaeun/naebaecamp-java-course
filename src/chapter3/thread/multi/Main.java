@@ -17,5 +17,6 @@ public class Main {
 
         System.out.println("::: main 쓰레드 종료 :::");
         // 멀티쓰레드 : 병렬 처리 확인됨
+        // main쓰레드가 thread0, thread1를 기다려주지 않고 먼저 종료됨 >> join 사용
     }
 }
