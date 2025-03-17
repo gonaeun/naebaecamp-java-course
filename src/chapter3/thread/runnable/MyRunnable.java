@@ -1,8 +1,7 @@
-package chapter3.thread.multi;
+package chapter3.thread.runnable;
 
-public class MyThread extends Thread {
+public class MyRunnable extends Thread {
 // Thread 클래스를 상속 받아서 쓰레드 구현
-// ⚠️ MyThread는 현재 Thread 제어역할과 실행로직 두가지를 담당하는 중 >> 분리해주어야함
 
     @Override
     public void run() { // run 메서드 오버라이딩
