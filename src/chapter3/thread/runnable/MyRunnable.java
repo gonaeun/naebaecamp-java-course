@@ -1,7 +1,8 @@
 package chapter3.thread.runnable;
 
-public class MyRunnable implements Runnable {
-// Thread 클래스를 상속 받아서 쓰레드 구현
+public class MyRunnable extends MyNewClass implements Runnable {
+    // 클래스는 다중 상속 불가
+    // 기존 쓰레드 기능을 유지하면서 확장을 통해 추가적인 기능 활용 (Runnable이 인터페이스라서 가능)
 
     @Override
     public void run() { // run 메서드 오버라이딩

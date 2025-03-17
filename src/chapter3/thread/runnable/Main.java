@@ -8,6 +8,9 @@ public class Main {
         // MyRunnable : 실행로직 담당
         MyRunnable myTask = new MyRunnable();
 
+        // 기존 쓰레드 클래스를 유지하면서 + 기능을 확장해서 사용
+        myTask.printMessage();
+
         // Thread : 제어 담당
         Thread thread0 = new Thread(myTask);
         Thread thread1 = new Thread(myTask);
