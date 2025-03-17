@@ -1,6 +1,6 @@
 package chapter3.thread.runnable;
 
-public class MyRunnable extends Thread {
+public class MyRunnable implements Runnable {
 // Thread 클래스를 상속 받아서 쓰레드 구현
 
     @Override
